@@ -2,7 +2,7 @@ Format: 1.8
 Date: Wed, 06 Nov 2013 20:27:15 +0100
 Source: pup-volume-monitor
 Binary: pup-volume-monitor
-Architecture: source amd64
+Architecture: source
 Version: 0.1.15-aaa1
 Distribution: unstable
 Urgency: low
@@ -19,17 +19,14 @@ Changes:
    to do... split docs libs and dev, as is debian policy
     (Closes: #XXXXXX)
 Checksums-Sha1: 
- 440cf0d631b9e87ce8f34e253092d16dc3166b41 1157 pup-volume-monitor_0.1.15-aaa1.dsc
+ 0fa9ad5c6257ef56d0771b9f3392aba61842a03e 1157 pup-volume-monitor_0.1.15-aaa1.dsc
  2f7704228f93073613a043e1b151b5e1c3aa1ddb 399876 pup-volume-monitor_0.1.15.orig.tar.gz
- d266d86164da1bd5872f7e08b72c5b8917bb14c7 2872 pup-volume-monitor_0.1.15-aaa1.debian.tar.gz
- 37ff9b662b0594c19968484529a8dc51eecc4955 92680 pup-volume-monitor_0.1.15-aaa1_amd64.deb
+ 30a984db943d05e4980827260595fbcd7af9dc11 2834 pup-volume-monitor_0.1.15-aaa1.debian.tar.gz
 Checksums-Sha256: 
- 8c02d1671275fa69944741cc0b4dc3349756be417f1aed22c00310a2ba180313 1157 pup-volume-monitor_0.1.15-aaa1.dsc
+ c8965c2b5e56d0d3d3f84a660018c09ffc042d103b9d02291fa5721cf5822136 1157 pup-volume-monitor_0.1.15-aaa1.dsc
  70561ce4c9dd5ccf8b507e4422ae503305361069dc26abe11ad840e2e1e158eb 399876 pup-volume-monitor_0.1.15.orig.tar.gz
- 22c4e95670ba80b8e4ecc9af667f622f8c1f89a075dfdd08826ef55e0749a4a4 2872 pup-volume-monitor_0.1.15-aaa1.debian.tar.gz
- 168ee0e8a5bf8fdf7ed97eb01d04bb19c49c595fcbd6082cdb13d3310ceeba40 92680 pup-volume-monitor_0.1.15-aaa1_amd64.deb
+ 88374e19339a1a5f4dfa7d0576176e8e773b8cbd139b1dd197b7890fe77582a8 2834 pup-volume-monitor_0.1.15-aaa1.debian.tar.gz
 Files: 
- 86dc1ce0f40b0b9a60262cb1dd68b2cf 1157 gnome extra pup-volume-monitor_0.1.15-aaa1.dsc
+ aeafc0baf0280576db6431d5bfe3b221 1157 gnome extra pup-volume-monitor_0.1.15-aaa1.dsc
  6c3f4be658a7b0e49f98358510000b2a 399876 gnome extra pup-volume-monitor_0.1.15.orig.tar.gz
- 49d99e18155f7be390bce658b579c87a 2872 gnome extra pup-volume-monitor_0.1.15-aaa1.debian.tar.gz
- 8a3bb5d7f7e70ea1f02482263df40586 92680 gnome extra pup-volume-monitor_0.1.15-aaa1_amd64.deb
+ a60d6f40097af8968ca853315fc0d19d 2834 gnome extra pup-volume-monitor_0.1.15-aaa1.debian.tar.gz

@@ -1,0 +1,135 @@
+dpkg-checkbuilddeps: Unmet build dependencies: libblkid-dev
+W: Unmet build-dependency in source
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: source package pup-volume-monitor
+dpkg-buildpackage: source version 0.1.15-aaa1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Jubei Mitsuyoshi <jubei.house.of.five.masters@gmail.com>
+ dpkg-source --before-build pup-volume-monitor-0.1.15
+dpkg-checkbuilddeps: Unmet build dependencies: libblkid-dev
+dpkg-buildpackage: warning: build dependencies/conflicts unsatisfied; aborting
+dpkg-buildpackage: warning: (Use -d flag to override.)
+dpkg-buildpackage: warning: this is currently a non-fatal warning with -S, but will probably become fatal in the future
+ fakeroot debian/rules clean
+dh clean 
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b pup-volume-monitor-0.1.15
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building pup-volume-monitor using existing ./pup-volume-monitor_0.1.15.orig.tar.gz
+dpkg-source: info: building pup-volume-monitor in pup-volume-monitor_0.1.15-aaa1.debian.tar.gz
+dpkg-source: info: building pup-volume-monitor in pup-volume-monitor_0.1.15-aaa1.dsc
+ dpkg-genchanges -S -sa >../pup-volume-monitor_0.1.15-aaa1_source.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build pup-volume-monitor-0.1.15
+dpkg-buildpackage: full upload (original source is included)
+W: /root/.pbuilderrc does not exist
+I: Current time: Mon Nov 25 02:56:29 CET 2013
+I: pbuilder-time-stamp: 1385344589
+I: Building the build Environment
+I: extracting base tarball [/var/cache/pbuilder/unstable-base.tgz]
+I: creating local configuration
+I: copying local configuration
+I: mounting /proc filesystem
+I: mounting /run/shm filesystem
+I: mounting /dev/pts filesystem
+I: Mounting /aaa-repo
+I: policy-rc.d already exists
+I: Obtaining the cached apt archive contents
+I: Installing the build-deps
+I: user script /aaa-tmpfs/aaa-build/1667/tmp/hooks/D05deps starting
+Ign file: work InRelease
+Ign file: work Release.gpg
+Get:1 file: work Release [3754 B]
+Ign file: work/main Translation-en
+Hit ftp://ftp.dk.debian.org unstable InRelease
+Hit ftp://ftp.dk.debian.org unstable/main amd64 Packages/DiffIndex
+Hit ftp://ftp.dk.debian.org unstable/contrib amd64 Packages/DiffIndex
+Hit ftp://ftp.dk.debian.org unstable/non-free amd64 Packages/DiffIndex
+Hit ftp://ftp.dk.debian.org unstable/contrib Translation-en/DiffIndex
+Hit ftp://ftp.dk.debian.org unstable/main Translation-en/DiffIndex
+Hit ftp://ftp.dk.debian.org unstable/non-free Translation-en/DiffIndex
+Reading package lists...
+I: user script /aaa-tmpfs/aaa-build/1667/tmp/hooks/D05deps finished
+ -> Attempting to satisfy build-dependencies
+ -> Creating pbuilder-satisfydepends-dummy package
+Package: pbuilder-satisfydepends-dummy
+Version: 0.invalid.0
+Architecture: amd64
+Maintainer: Debian Pbuilder Team <pbuilder-maint@lists.alioth.debian.org>
+Description: Dummy package to satisfy dependencies with aptitude - created by pbuilder
+ This package was created automatically by pbuilder to satisfy the
+ build-dependencies of the package being currently built.
+Depends: debhelper (>= 5), binutils-multiarch, mime-support, libpopt0:amd64, file, libgcc-4.7-dev:amd64, libmagic1:amd64, locales-all, cpp-4.7, gcc-4.7, uuid-dev, libglib2.0-dev, libudev-dev, libblkid-dev, locales, libc6-i386, libsigsegv2:amd64, pkg-config, libc6-x32, gawk, cpio
+dpkg-deb: building package `pbuilder-satisfydepends-dummy' in `/tmp/satisfydepends-aptitude/pbuilder-satisfydepends-dummy.deb'.
+Selecting previously unselected package pbuilder-satisfydepends-dummy.
+(Reading database ... 11375 files and directories currently installed.)
+Unpacking pbuilder-satisfydepends-dummy (from .../pbuilder-satisfydepends-dummy.deb) ...
+dpkg: pbuilder-satisfydepends-dummy: dependency problems, but configuring anyway as you requested:
+ pbuilder-satisfydepends-dummy depends on debhelper (>= 5); however:
+  Package debhelper is not installed.
+ pbuilder-satisfydepends-dummy depends on binutils-multiarch; however:
+  Package binutils-multiarch is not installed.
+ pbuilder-satisfydepends-dummy depends on mime-support; however:
+  Package mime-support is not installed.
+ pbuilder-satisfydepends-dummy depends on libpopt0:amd64; however:
+  Package libpopt0 is not installed.
+ pbuilder-satisfydepends-dummy depends on file; however:
+  Package file is not installed.
+ pbuilder-satisfydepends-dummy depends on libgcc-4.7-dev:amd64; however:
+  Package libgcc-4.7-dev is not installed.
+ pbuilder-satisfydepends-dummy depends on libmagic1:amd64; however:
+  Package libmagic1 is not installed.
+ pbuilder-satisfydepends-dummy depends on locales-all; however:
+  Package locales-all is not installed.
+ pbuilder-satisfydepends-dummy depends on cpp-4.7; however:
+  Package cpp-4.7 i
+Setting up pbuilder-satisfydepends-dummy (0.invalid.0) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Initializing package states...
+Writing extended state information...
+The following NEW packages will be installed:
+  binutils-multiarch{a} bsdmainutils{a} debhelper{a} file{a} gettext{a} 
+  gettext-base{a} groff-base{a} intltool-debian{a} libasprintf0c2{a} 
+  libcroco3{a} libffi6{a} libglib2.0-0{a} libmagic1{a} libpipeline1{a} 
+  libunistring0{a} libxml2{a} man-db{a} mime-support{a} po-debconf{a} 
+0 packages upgraded, 19 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1601 kB/9604 kB of archives. After unpacking 33.8 MB will be used.
+The following packages have unmet dependencies:
+ pbuilder-satisfydepends-dummy : Depends: libpopt0:amd64 which is a virtual package.
+                                 Depends: libgcc-4.7-dev:amd64 which is a virtual package.
+                                 Depends: libmagic1:amd64 which is a virtual package.
+                                 Depends: locales-all but it is not going to be installed.
+                                 Depends: cpp-4.7 but it is not going to be installed.
+                                 Depends: gcc-4.7 but it is not going to be installed.
+                                 Depends: uuid-dev but it is not going to be installed.
+                                 Depends: libglib2.0-dev but it is not going to be installed.
+                                 Depends: libudev-dev but it is not going to be installed.
+                                 Depends: libblkid-dev but it is not going to be installed.
+                                 Depends: locales but it is not going to be installed.
+                                 Depends: libc6-i386 but it is not going to be installed.
+                                 Depends: libsigsegv2:amd64 which is a virtual package.
+                                 Depends: pkg-config but it is not going to be installed.
+                                 Depends: libc6-x32 but it is not going to be installed.
+                                 Depends: gawk but it is not going to be installed.
+                                 Depends: cpio but it is not going to be installed.
+Unable to resolve dependencies!  Giving up...
+The following NEW packages will be installed:
+  binutils-multiarch{a} bsdmainutils{a} debhelper{a} file{a} gettext{a} 
+  gettext-base{a} groff-base{a} intltool-debian{a} libasprintf0c2{a} 
+  libcroco3{a} libffi6{a} libglib2.0-0{a} libmagic1{a} libpipeline1{a} 
+  libunistring0{a} libxml2{a} man-db{a} mime-support{a} po-debconf{a} 
+0 packages upgraded, 19 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1601 kB/9604 kB of archives. After unpacking 33.8 MB will be used.
+Abort.
+E: pbuilder-satisfydepends failed.
+I: Copying back the cached apt archive contents
+I: unmounting /aaa-repo filesystem
+I: unmounting dev/pts filesystem
+I: unmounting run/shm filesystem
+I: unmounting proc filesystem
+I: cleaning the build env 
+I: removing directory /aaa-tmpfs/aaa-build/1667 and its subdirectories
