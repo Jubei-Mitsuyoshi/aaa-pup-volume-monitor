@@ -15,3 +15,6 @@ https://github.com/Jubei-Mitsuyoshi/aaa-pup-volume-monitor/issues
 
 status........ works and fully packaged for debian with included and
 checked working init scripts
+
+
+STATUS: packaged running tested
